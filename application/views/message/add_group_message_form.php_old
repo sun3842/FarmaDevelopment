@@ -1,0 +1,169 @@
+	
+
+	<div class="row">
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Dettagli Messaggio
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-12">
+						<?php 
+						$attributes = array('method' => 'POST', 'id' => 'form_group_message');
+						echo form_open("add_group_message", $attributes);
+						?>
+                        <?php if (isset($message)) : ?>
+						  <h1 class="text-center text-success"><?php echo $message;?></h1>	<br/>
+					   <?php endif; ?>
+                       
+                       
+					<div class='form-group'>
+						<label><?php echo $this->message_title_label ?></label><span class='text-danger'>*</span>
+						<input type='text' class='form-control'   name='message_title' placeholder='<?php echo $this->message_title_label ?>' >
+						<span class='text-danger'><?php  echo form_error('message_title'); ?></span>
+					</div><div class='form-group'>
+						<label><?php echo $this->message_details_label ?></label><span class='text-danger'>*</span>
+						<textarea class='form-control'   name='message_details' placeholder='<?php echo $this->message_details_label ?>' > </textarea>
+						<span class='text-danger'><?php  echo form_error('message_details'); ?></span>
+					</div>
+                    
+					<div class='form-group'>
+						<label><?php echo $this->message_is_push_message_label ?></label><span class='text-danger'>*</span>
+						<?php echo  form_dropdown('message_is_push_message', array('1'=>'Yes','0'=>'No'),0,'class="form-control" id=""');?>
+						<span class='text-danger'><?php  echo form_error('message_is_push_message'); ?></span>
+					</div>
+				
+					<div class='form-group'>
+						<label><?php echo $this->message_send_now_label ?></label><span class='text-danger'>*</span>
+						<?php echo  form_dropdown('message_send_now', array('1'=>'Yes','0'=>'No'),1,'class="form-control" id="message_send_now"');?>
+						<span class='text-danger'><?php  echo form_error('message_send_now'); ?></span>
+					</div>
+                   
+                    <div id="message_send_later_date_time_div" class="col-md-offset-1 col-lg-offset-1 col-sm-offset-1" style="display:none;">
+					<div class='form-group'>
+						<label><?php echo $this->message_send_later_date_time_label ?></label><span class='text-danger'>*</span>
+						<input type='text' class='form-control'   name='message_send_later_date_time' placeholder='<?php echo $this->message_send_later_date_time_label ?>' >
+						<span class='text-danger'><?php  echo form_error('message_send_later_date_time'); ?></span>
+					</div>
+                    </div>
+                   
+							
+							<div class="form-group">
+								<label class="control-label"><?php echo $this->message_sex_label;?></label><br/>
+								<div class="radio radio-info radio-inline">
+									<input type="radio" id="" name="sex_type" value="<?php echo SEX_TYPE_MALE;?>">
+									<label for=""><?php echo $this->message_male_label;?></label>
+								</div>
+								<div class="radio radio-info radio-inline">
+									<input type="radio" id="" name="sex_type" value="<?php echo SEX_TYPE_FEMALE;?>">
+									<label for=""><?php echo $this->message_female_label;?></label>
+								</div>
+								<div class="radio radio-info radio-inline">
+									<input type="radio" id="" name="sex_type" value="<?php echo SEX_TYPE_OTHERS;?>">
+									<label for=""><?php echo $this->message_others_label;?></label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="checkbox checkbox-primary">
+											<input id="" class="styled" type="checkbox" name="send_by_birth_year">
+											<label for="">
+												<?php echo $this->message_send_by_birth_year_label;?>
+											</label>
+										</div>
+										<?php echo  form_dropdown('message_send_by_birth_year', $this->year_array,0,'class="form-control" id="message_any_ending_date"');?>
+									</div>
+									<div class="col-sm-4">
+										<div class="checkbox checkbox-primary">
+											<input id="" class="styled" type="checkbox" name="send_by_birth_month">
+											<label for="checkbox2">
+												<?php echo $this->message_send_by_birth_month_label;?>
+											</label>
+										</div>
+                                        <?php echo  form_dropdown('message_send_by_birth_month', $this->month_array,0,'class="form-control" id="message_any_ending_date"');?>
+										
+									</div>
+									<div class="col-sm-4">
+										<div class="checkbox checkbox-primary">
+											<input id="" class="styled" type="checkbox" name="send_by_age_limit">
+											<label for="">
+												<?php echo $this->message_send_by_age_limit_label;?>
+											</label>
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+												<input type="text" id="age_from" name="age_from" class="form-control" placeholder="<?php echo $this->message_from_placeholder;?>">
+											</div>
+											<div class="col-sm-6">
+												<input type="text" id="age_to" name="age_to" class="form-control" placeholder="<?php echo $this->message_to_placeholder;?>">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="checkbox checkbox-primary">
+											<input id="" class="styled" type="checkbox" name="send_by_city">
+											<label for="">
+												<?php echo $this->message_send_by_city_label;?>
+											</label>
+										</div>
+										<input type="text" class="form-control" name="message_send_city_name">
+									</div>
+									<div class="col-sm-4">
+										<div class="checkbox checkbox-primary">
+											<input id="" class="styled" type="checkbox" name="send_by_region">
+
+											<label for="">
+												<?php echo $this->message_send_by_region_label;?>
+											</label>
+										</div>
+										<input type="text" class="form-control" name="message_send_region_name">
+									</div>
+									<div class="col-sm-4">
+										<div class="checkbox checkbox-primary">
+											<input id="" class="styled" type="checkbox" name="send_by_post_code">
+											<label for="">
+												<?php echo $this->message_send_by_post_code;?>
+											</label>
+										</div>
+										<input type="text" class="form-control" name="message_send_post_code">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="radio radio-info radio-inline">
+											<input type="radio" id="inlineRadio1" value="<?php echo MESSAGE_CONDITION_AND_GATE;?>" name="message_conditions">
+											<label for="inlineRadio1"> <?php echo $this->message_matching_all_conditions_label;?></label><span class='text-danger'>*</span>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="radio radio-info radio-inline">
+											<input type="radio" id="inlineRadio1" value="<?php echo MESSAGE_CONDITION_OR_GATE;?>" name="message_conditions">
+											<label for="inlineRadio1"> <?php echo $this->message_matching_any_conditions_label;?></label><span class='text-danger'>*</span>
+										</div>
+									</div>
+                                    
+								</div>
+                                <span class='text-danger'><?php  echo form_error('message_conditions'); ?></span>
+							</div>
+							
+							<center>
+								<button class="btn-send">
+								<?php echo $this->message_send_button_label;?><i class="fa fa-send fa-spacing-left"></i>
+                                </button>
+							</center>
+						<?php echo form_close(); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		

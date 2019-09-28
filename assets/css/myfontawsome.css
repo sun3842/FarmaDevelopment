@@ -1,0 +1,20 @@
+.fa-spacing{
+	margin-right: 0.5em;
+}
+
+.fa-spacing-left{
+	margin-left: 0.5em;
+}
+
+.fa-listicon{
+	color: #555555;
+	min-width: 20px;
+}
+
+.fa-fix-width{
+	min-width: 30px;
+}
+
+.fa-fix-width-small{
+	min-width: 20px;
+}

@@ -1,0 +1,68 @@
+
+body.login {
+	padding-top: 0px;
+	overflow-x: auto;
+}
+
+.container-login {
+	margin: 0px auto;
+	padding: 10px;
+	padding-top: 120px;
+	width: 30%;
+}
+
+.login-box {
+	margin: auto;
+	min-width: 250px;
+	border-radius: 5px;
+	box-shadow: 2px 4px 4px 0px #2b5a03
+}
+
+.login-box .panel{
+	box-shadow: none;
+}
+
+.login-forgot {
+	margin: auto;
+	text-align: center;
+}
+
+.login-forgot a{
+	color: #7777ff;
+}
+
+.login-logo{
+	margin: 0px auto 30px auto;
+	min-width: 200px;
+	text-align: center;
+}
+
+.login-logo img{
+	width: 80%;
+}
+
+.login-buttons{
+	margin-top: 30px;
+}
+
+.remember-checkbox-text{
+	padding-left: 0.5em;
+	font-family: "Open Sans", sans-serif;
+	font-size: 0.9em;
+	font-weight: normal;
+	color: #777777;
+}
+
+.login-box .panel .panel-body{
+	padding: 30px 20px;
+}
+
+.alert-login-info {
+	border: 0px;
+	border-left: 4px solid #0183B3;
+	border-radius: 0px;
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}

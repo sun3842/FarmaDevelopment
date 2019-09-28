@@ -1,0 +1,14 @@
+.loader-container {
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	width: 15px;
+	height: 15px;;
+	align-items: center;
+	justify-content: center;
+}
+
+.loader-center{
+	margin: auto;
+}
+

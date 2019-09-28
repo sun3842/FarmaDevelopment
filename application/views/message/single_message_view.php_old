@@ -1,0 +1,88 @@
+<div class="row">
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<?php echo $title;  ?>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="table-responsive">
+		   <table class="table">
+			 
+			  <thead>
+				 <tr>
+					<th>Column</th>
+					<th>Value</th>
+				 </tr>
+			  </thead>
+			  <tbody>
+				 <tr>
+					<td class='col-lg-3'><?php echo $this->ref_message_message_type_id_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->ref_message_message_type_id;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_title_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_title;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_details_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_details;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_any_ending_date_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_any_ending_date;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_ending_date_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_ending_date;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_ending_time_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_ending_time;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_is_push_message_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_is_push_message;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_created_by_user_id_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_created_by_user_id;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_created_date_time_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_created_date_time;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_edited_by_user_id_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_edited_by_user_id;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_edited_date_time_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_edited_date_time;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_send_now_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_send_now;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_send_later_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_send_later;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_send_later_date_time_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_send_later_date_time;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_is_already_sent_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_is_already_sent;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_sending_date_time_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_sending_date_time;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_any_attached_file_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_any_attached_file;  ?></td>
+				 </tr><tr>
+					<td class='col-lg-3'><?php echo $this->message_active_label ?></td>
+					<td class='col-lg-9'><?php echo $query_result->message_active;  ?></td>
+				 </tr>
+				
+		
+			  </tbody>
+		   </table>
+		</div>  	
+	</div>
+</div>
+
+	

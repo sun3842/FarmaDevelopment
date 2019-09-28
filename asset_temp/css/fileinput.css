@@ -1,0 +1,283 @@
+/*!
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
+ * @package bootstrap-fileinput
+ * @version 4.2.8
+ *
+ * File input styling for Bootstrap 3.0
+ * Built for Yii Framework 2.0
+ * Author: Kartik Visweswaran
+ * Year: 2015
+ * For more Yii related demos visit http://demos.krajee.com
+ */
+.file-loading {
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    font-size: 999px;
+    text-align: right;
+    color: #fff;
+    background: transparent url('../img/loading.gif') top left no-repeat;
+    border: none;
+}
+
+.file-object {
+    margin: 0 0 -5px 0;
+    padding: 0;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: right;
+    opacity: 0;
+    background: none repeat scroll 0 0 transparent;
+    cursor: inherit;
+    display: block;
+}
+
+.file-caption-name {
+    display: inline-block;
+    overflow: hidden;
+    height: 20px;
+    word-break: break-all;
+}
+
+.input-group-lg .file-caption-name {
+    height: 25px;
+}
+
+.file-preview-detail-modal {
+    text-align: left;
+}
+
+.file-error-message {
+    background-color: #f2dede;
+    color: #a94442;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px 5px 5px;
+}
+
+.file-error-message pre, .file-error-message ul {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.file-caption-disabled {
+    background-color: #EEEEEE;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.file-preview {
+/*    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 100%;*/
+    margin-bottom: 5px;
+}
+
+.file-preview > .close {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  color: #394263;
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 5px;
+  min-width: 30px;
+  opacity: 0.5;
+  padding: 3px 8px;
+  text-align: center;
+}
+
+.file-preview-frame {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.18);
+  display: table;
+  float: left;
+  height: 160px;
+  margin: 8px;
+  padding: 6px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.file-preview-frame:not(.file-preview-error):hover {
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.file-preview-image {
+    height: 130px !important;
+    vertical-align: middle;
+}
+
+.file-preview-text {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2px;
+    color: #428bca;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.file-preview-other {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 160px;
+    height: 160px;
+    border: 2px solid #999;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+
+.file-actions, .file-other-error {
+    text-align: left;
+}
+
+.file-icon-lg {
+    font-size: 1.2em;
+}
+
+.file-icon-2x {
+    font-size: 2.4em;
+}
+
+.file-icon-4x {
+    font-size: 4.8em;
+}
+
+.file-input-new .file-preview, .file-input-new .close, .file-input-new .glyphicon-file,
+.file-input-new .fileinput-remove-button, .file-input-new .fileinput-upload-button,
+.file-input-ajax-new .fileinput-remove-button, .file-input-ajax-new .fileinput-upload-button {
+    display: none;
+}
+
+.file-thumb-loading {
+    background: transparent url('../img/loading.gif') no-repeat scroll center center content-box !important;
+}
+
+.file-actions {
+    margin-top: 15px;
+}
+
+.file-footer-buttons {
+    float: right;
+}
+
+.file-upload-indicator {
+    padding-top: 2px;
+    cursor: default;
+    opacity: 0.8;
+    width: 60%;
+}
+
+.file-upload-indicator:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+.file-footer-caption {
+  color: #777;
+  display: block;
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 5px;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+  top: 8px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.file-preview-error {
+    opacity: 0.65;
+    box-shadow: none;
+}
+
+.file-preview-frame:not(.file-preview-error) .file-footer-caption:hover {
+    color: #000;
+}
+
+.file-drop-zone {
+  background-color: #f9fafc;
+  border: 2px dashed #eaedf1;
+  border-radius: 4px;
+  height: 100%;
+  margin: 12px 0;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.file-drop-zone-title {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    padding: 60px 0;	
+}
+
+.file-highlighted {
+    border: 2px dashed #999 !important;
+    background-color: #f0f0f0;
+}
+
+.file-uploading {
+    background: url('../img/loading-sm.gif') no-repeat center bottom 10px;
+    opacity: 0.65;
+}
+
+.file-error-message .close {
+    margin-top: 5px;
+}
+
+.file-thumb-progress .progress, .file-thumb-progress .progress-bar {
+  border-radius: 0 !important;
+  font-size: 9px;
+  height: 10px;
+  line-height: 10px;
+}
+
+.file-thumbnail-footer {
+    position: relative;
+}
+
+/*.file-thumb-progress {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+}*/
+
+.file-thumb-progress {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 40;
+}
+
+
+.file-drop-zone .btn.btn-default:hover {
+    background-color: #333 !important;
+}
